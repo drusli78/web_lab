@@ -1,0 +1,6 @@
+/vendor/
+/tools/
+/src/Controller/parameters.ini
+/composer.lock
+/.git
+/.idea

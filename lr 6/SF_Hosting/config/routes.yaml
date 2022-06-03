@@ -1,0 +1,48 @@
+not_authorised_main_page:
+  path: /
+  controller: App\Controller\MainController::notAuthorisedHomepage
+  methods:    GET
+authorised_main_page:
+  path: /authorised
+  controller: App\Controller\MainController::authorisedHomepage
+  methods:    GET
+show_more_posts1:
+  path: /not_authorised_show_more
+  controller: App\Controller\MainController::showMorePostsPage1
+  methods:    GET
+show_more_posts2:
+  path: /authorised_show_more
+  controller: App\Controller\MainController::showMorePostsPage2
+  methods:    GET
+registration:
+  path: /registration
+  controller: App\Controller\MainController::registrationUser
+  methods:    GET
+authorisation:
+  path: /authorisation
+  controller: App\Controller\MainController::authorisationUser
+  methods:    GET
+exit_user:
+  path: /exitUser
+  controller: App\Controller\MainController::exitUser
+  methods:    GET
+check_log:
+  path: /check_log
+  controller: App\Controller\MainController::checkLog
+  methods:    GET
+detailpage:
+  path: /detail_page
+  controller: App\Controller\MainController::postDetailPage
+  methods:    GET
+userprofile:
+  path: /user_profile
+  controller: App\Controller\MainController::userDetailPage
+  methods:    GET
+userallposts:
+  path: /user_all_posts
+  controller: App\Controller\MainController::userAllPosts
+  methods:    GET
+useraddpost:
+  path: /user_add_post
+  controller: App\Controller\MainController::addPost
+  methods: GET

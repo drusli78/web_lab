@@ -1,0 +1,258 @@
+.modal3{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.modal3-content{
+    background: white;
+    margin: 10% auto;
+    width: 65%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 3px;
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.close-btn3 {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+.services1_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.services1_card button a{
+    color: lightpink;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #2c3034;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.close-btn3:hover{
+    position: absolute;
+    cursor: pointer;
+    color: #1a1e21;
+    transition: 0.2s ease-out;
+}
+.modal3-content-left{
+    position: relative;
+    border-radius: 0 3px 3px 0;
+    background: linear-gradient(90deg, rgb(200,192,228) 0%, rgb(153,139,209) 100%);
+}
+
+#Modal3-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.modal3-content-right {
+    border-radius: 0 3px 3px 0;
+    position: relative;
+}
+
+.modal3-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal3-form h2{
+    font-size: 1.5rem;
+    text-align: start;
+    width: 65%;
+    margin-bottom: 1rem;
+}
+
+.form-validation3{
+    margin-bottom: 0.5rem;
+    width: 65%;
+    margin-top: 10px;
+
+}
+
+.form-validation3.error{
+    margin-bottom: 1.5rem;
+    position: relative;
+    border: 1px solid red;
+    border-radius: 2px;
+}
+
+.form-validation3.valid{
+    margin-bottom: 0.5rem;
+    position: relative;
+    border: 1px solid orangered;
+    border-radius: 2px;
+}
+
+.form-validation3 p{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: red;
+    position: absolute;
+    top: 1.8rem;
+    display: none;
+}
+
+.form-validation3.error p{
+    display: block;
+}
+
+.modal3-input{
+    display: block;
+    padding-left: 0.5rem;
+    outline: none;
+    border-radius: 2px;
+    color: black;
+    height: 2rem;
+    width: 100%;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.05);
+}
+
+.modal3-input::placeholder{
+    color: #6c757d;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+    left: 40px;
+}
+
+.modal3-input-btn{
+    width: 65%;
+    height: 2.5rem;
+    border-radius: 2px;
+    background-color: #998BD1;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.modal3-input-btn:hover{
+    cursor: pointer;
+    background-color: #445DE1;
+    transition: all 0.4s ease-out;
+}
+.modal3-input-btn a{
+    position: relative;
+    z-index: 2;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.modal3-input-login{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: black;
+    width: 50%;
+    text-align: center;
+}
+
+.modal3-input-login a{
+    text-decoration: none;
+
+}
+.btn-services3{
+    margin-top: 20px;
+    background: #998BD1;
+    font-size: 1.2rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 14px 30px;
+}
+.btn-services3 a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+.btn-services2{
+    color: white;
+}
+
+@media screen and (max-width: 1093px){
+    .modal3-form h2{
+        font-size: 1.4rem;
+    }
+    .nav-menu2 a{
+        font-size: 15px;
+    }
+    #navbar-logo2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 885px){
+    .modal3-input-btn a{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal3-content-left {
+        display: none;
+    }
+
+    .modal2-content {
+        grid-template-columns: auto;
+        margin: 15% auto;
+        width: 70%;
+        height: 75%;
+    }
+
+    .modal3-form {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+        width: 250%;
+        height: 120%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .modal3-content {
+        margin: 20% auto;
+        width: 90%;
+        height: 80%;
+    }
+}

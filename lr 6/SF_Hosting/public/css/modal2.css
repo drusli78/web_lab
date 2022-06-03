@@ -1,0 +1,210 @@
+.modal2{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.modal2-content{
+    background: white;
+    margin: 10% auto;
+    width: 55%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 3px;
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.close-btn1 {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.close-btn1:hover{
+    position: absolute;
+    cursor: pointer;
+    color: #1a1e21;
+    transition: 0.2s ease-out;
+}
+.modal2-content-left{
+    position: relative;
+    border-radius: 0 3px 3px 0;
+    background: linear-gradient(90deg, rgb(200,192,228) 0%, rgb(153,139,209) 100%);
+}
+
+#Modal-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.modal2-content-right {
+    border-radius: 0 3px 3px 0;
+    position: relative;
+}
+
+.modal2-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal2-form h2{
+    font-size: 1.5rem;
+    text-align: start;
+    width: 65%;
+    margin-bottom: 1rem;
+}
+
+.form-validation2{
+    margin-bottom: 0.5rem;
+    width: 65%;
+    margin-top: 10px;
+
+}
+
+.form-validation2.error{
+    margin-bottom: 1.5rem;
+    position: relative;
+    border: 1px solid red;
+    border-radius: 2px;
+}
+
+.form-validation2.valid{
+    margin-bottom: 0.5rem;
+    position: relative;
+    border: 1px solid orangered;
+    border-radius: 2px;
+}
+
+.form-validation2 p{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: red;
+    position: absolute;
+    top: 1.8rem;
+    display: none;
+}
+
+.form-validation2.error p{
+    display: block;
+}
+
+.modal2-input{
+    display: block;
+    padding-left: 0.5rem;
+    outline: none;
+    border-radius: 2px;
+    color: black;
+    height: 2rem;
+    width: 100%;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.05);
+}
+
+.modal2-input::placeholder{
+    color: #6c757d;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+    left: 40px;
+}
+
+.modal2-input-btn{
+    width: 65%;
+    height: 2rem;
+    border-radius: 2px;
+    background-color: #998BD1;
+    outline: none;
+    border: none;
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    /* align-content: center; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.modal2-input-btn:hover{
+    cursor: pointer;
+    background-color: #445DE1;
+    transition: all 0.4s ease-out;
+}
+.modal2-input-btn a{
+    position: relative;
+    z-index: 2;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.modal2-input-login{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: black;
+    width: 50%;
+    text-align: center;
+}
+
+.modal2-input-login a{
+    text-decoration: none;
+
+}
+
+
+@media screen and (max-width: 1093px){
+    .modal2-form h2{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 885px){
+    .modal2-input-btn a{
+        font-size: 1.3rem;;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .modal2-content-left{
+        display: none;
+    }
+    .modal2-content{
+        grid-template-columns: auto;
+        margin: 15% auto;
+        width: 70%;
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .modal2-content{
+        margin: 20% auto;
+        width: 90%;
+        height: 80%;
+    }
+}

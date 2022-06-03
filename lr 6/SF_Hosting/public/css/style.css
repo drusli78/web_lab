@@ -1,0 +1,218 @@
+@import url('content.css');
+@import url('modal.css');
+@import url('modal2.css');
+@import url('cards.css');
+@import url('add_post.css');
+@import url('cards_for_avtoris_person.css');
+@import url('style2.css');
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav-container{
+    width: 100%;
+    background-color: #181818;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+#navbar-logo{
+    color: white;
+    justify-self: start;
+    margin-left: 20px;
+}
+
+#navbar-logo {
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    justify-self: end;
+    font-size: 20px
+}
+
+.nav-links{
+    color: white;
+    text-decoration: none;
+
+
+}
+th{
+    padding: 20px;
+    width: 170px;
+}
+tr{
+    background: #C8C0E4;
+}
+
+.nav-links:hover{
+    color: #445DE1;
+    transition: all 0.2s ease-out;
+}
+
+
+.nav-links-btn{
+    background-color: #445DE1;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.nav-links-btn:hover{
+    background-color: transparent;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: solid 1 px #445DE1;
+    transition: all 0.3s ease-out;
+}
+.nav-links-btn2{
+    background-color: #445DE1;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.nav-links-btn2:hover{
+    background-color: transparent;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: solid 1 px #445DE1;
+    transition: all 0.3s ease-out;
+}
+
+.menu-toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3 s ease-in-out;
+    background: white;
+}
+
+@media screen and (max-width: 1140px){
+    .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    justify-self: end;
+    font-size: 20px;
+    justify-items: end;
+}
+}
+
+@media screen and (max-width: 768px){
+    .nav-container{
+        position: relative;
+    }
+    .nav-menu{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        justify-items: center;
+    }
+    #navbar-logo{
+        margin-left: 60px;
+    }
+    .nav-menu.active{
+        background: #181818;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links{
+        text-align: center;
+        line-height: 60px;
+        width: 100%;
+        display: table;
+    }
+    .navbar{
+        width: 100%;
+    }
+
+    .nav-links-btn{
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        background-color: #181818;
+        color: white;
+        transition: all 0.4s ease-out;
+    }
+
+    .nav-links-btn2{
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        background-color: #181818;
+        color: white;
+        transition: all 0.4s ease-out;
+    }
+
+    .nav-links-btn:hover{
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        color: white;
+        transition: all 0.4s ease-out;
+        color: #445DE1;
+    }
+    .nav-links-btn2:hover {
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        color: white;
+        transition: all 0.4s ease-out;
+        color: #445DE1;
+    }
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    .menu-toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+    .menu-toggle:hover{
+        cursor: pointer;
+    }
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+@media screen and (max-width: 330px){
+
+    #navbar-logo{
+        font-size:2am;
+    }
+}
